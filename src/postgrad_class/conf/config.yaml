@@ -1,0 +1,5 @@
+# hydra stuff
+defaults:
+  - base_config
+  - model: linear
+  - _self_

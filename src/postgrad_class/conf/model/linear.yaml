@@ -1,0 +1,4 @@
+defaults:
+  - base_linear
+
+_target_: postgrad_class.model.linear.LinearModel

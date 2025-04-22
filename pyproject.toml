@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "postgrad-class"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Boje Deforce", email = "bojedeforce@gmail.com" },
+]
+
+dependencies = [
+	"scikit-learn",
+	"pandas",
+	"torch",
+	"jupyter",
+	"beartype",
+  "hydra-core",
+]
+
+[project.urls]
+Documentation = "https://github.com/Boje Deforce/postgrad-class#readme"
+Source = "https://github.com/Boje Deforce/postgrad-class"
+
+[tool.hatch.version]
+path = "src/postgrad_class/__about__.py"
+
+[tool.coverage.run]
+source_pkgs = ["postgrad_class", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/postgrad_class/__about__.py",
+]
+
+[tool.coverage.paths]
+postgrad_class = ["src/postgrad_class", "*/postgrad-class/src/postgrad_class"]
+tests = ["tests", "*/postgrad-class/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

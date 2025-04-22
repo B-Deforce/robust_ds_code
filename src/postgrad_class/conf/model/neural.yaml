@@ -1,0 +1,7 @@
+defaults:
+  - base_neural
+
+_target_: postgrad_class.model.neural.SimpleNNModel
+input_dim: 100
+hidden_dim: 8
+lr: 0.001
