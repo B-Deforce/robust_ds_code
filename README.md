@@ -54,7 +54,7 @@ To run this project, you need:
     hatch shell
     ```
 ## Examples
-The `src/postgrad_class/notebooks/example.ipynb` notebook introduces key concepts and provides hands-on examples. Open it in Jupyter Notebook or on [Google Colab](https://colab.research.google.com/drive/1P5Rqi3vRAJG6ZLNEJ6YfP2--wWgre2eE?usp=sharing) to explore the code and run the examples interactively.
+The `src/postgrad_class/notebooks/example.py` notebook (in `py:percent` format) introduces key concepts and provides hands-on examples. Open it in Jupyter Notebook.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
