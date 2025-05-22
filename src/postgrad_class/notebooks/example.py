@@ -168,8 +168,6 @@ class SimpleNNModel:
 
 # %% [markdown]
 # * does not follow our structure and uses a different naming convention?
-#
-# ![image](images/derp.png)
 
 # %% [markdown]
 # ### OOP with ABC
