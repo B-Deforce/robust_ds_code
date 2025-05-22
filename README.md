@@ -39,7 +39,8 @@ Key topics covered include:
 
 To run this project, you need:
 - Python 3.8 or later
-- `hatch` for managing the project environment and dependencies
+- `hatch` for managing the project environment and dependencies ([installation isntructions](https://hatch.pypa.io/1.13/install/#macos) for Hatch).
+   - If you're used to `conda`, an easy way to install `hatch` is to create a separate `conda` env with your desired `python` version and install `hatch` there. You can then run the `hatch` commands below inside this environment.
 
 ### Installation
 
@@ -55,6 +56,33 @@ To run this project, you need:
     ```
 ## Examples
 The `src/postgrad_class/notebooks/example.py` notebook (in `py:percent` format) introduces key concepts and provides hands-on examples. Open it in Jupyter Notebook.
+### Running Jupyter Notebooks on a Notebook Server with Hatch
+
+Jupyter notebooks run on a *notebook server*, which is a Python process that provides a web interface to interactively write, run, and visualize code. This server handles kernel management, file I/O, and communication between the front-end (UI) and the back-end (kernel) over HTTP. The actual computation happens in a kernel — typically a Python interpreter — that executes code sent from the notebook interface.
+
+#### Launching a Jupyter Notebook Server with Hatch
+
+You can launch a notebook server within your active Hatch environment (see step 2 above) by running:
+```bash
+jupyter notebook --no-browser
+```
+
+This will start the Jupyter server and print a URL with a token, for example:
+
+```bash
+http://127.0.0.1:8888/?token=your-token-here
+```
+You have now two main options:
+
+1. In your browser
+Simply paste the provided URL into your browser to access the classic Jupyter notebook interface.
+
+2. In VSCode or another IDE
+
+- Open the Command Palette and select:  
+  **"Jupyter: Specify local or remote Jupyter server"**
+- Paste the URL with the token.
+- Now, when you open a `.ipynb` file, VSCode will connect to the running kernel on that server.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
