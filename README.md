@@ -89,4 +89,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-Created by Boje Deforce. For questions or feedback, feel free to reach out via [GitHub](https://github.com/BojeDeforce).
+Created by Boje Deforce. For questions or feedback, feel free to reach out via [GitHub](https://github.com/B-Deforce).
